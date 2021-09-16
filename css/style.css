@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300&family=Russo+One&display=swap');
+/* reset css */
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+/*background: #fff url(https://img.freepik.com/vecteurs-libre/fond-abstrait-blanc_23-2148806276.jpg?size=626&ext=jpg)no-repeat fixed center center / cover;*/
+background-color: #fff;
+}
+body{
+    font: 1.6rem 'Niramit', sans-serif;
+    margin: 0;
+    
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-default: #000;
+    --color-primary: #2b7dc0;
+    --color-warning: #e23131;
+    --color-success: #4db32e;
+    --color-border: #b3b5b6;
+}
+/* thème */
+header{
+    line-height: 5.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url("../asset/header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 26rem;
+    /*position: fixed;*/
+    width: 100%;
+    top: 0;
+
+}
+h1{
+    font: 4rem'Russo One', sans-serif;
+}
+h2, h3, ul, li{
+    text-align: center;
+    padding: 1rem;
+}
+p{
+    padding: 1rem;
+    padding-left: 0%;
+}
+article{
+    max-width: 90rem;
+    min-height: 5rem;
+    padding: 2rem;
+    border: solid 0.1rem transparent;
+    background-color: #e0e2e182;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 1.0rem var(--color-border);
+    margin-top: 5rem;
+    border-radius: 2rem;
+}
+article:first-child{
+    margin-top: 5rem;
+}
+h3{
+    background-color: #2f312ee3;
+    color: #fff;
+    border-radius: 1rem;
+    
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    min-width: 30rem;
+    
+}
+/* pied de page */
+footer{
+    background-color: #2f312e;
+    padding: 1rem;
+    margin-top: 4rem;
+    
+}
+footer p{
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 47rem){
+    header{
+        padding: 10rem;
+    }
+    h1, h2{
+        font-size: 3rem;
+    }
+    #gallery{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    article:first-child{
+        margin-top: 1rem;
+    }
+    }
