@@ -32,6 +32,19 @@ a{
     --color-success: #4db32e;
     --color-border: #b3b5b6;
 }
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #222 #333;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
 /* thème */
 header{
     line-height: 5.5rem;

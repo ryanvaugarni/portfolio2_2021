@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     list-style: none;
 }
 a{
-    color: #222;
+    color: rgb(242, 236, 236);
     text-decoration: none;
 }
 *{
@@ -32,13 +32,61 @@ a{
     --color-success: #4db32e;
     --color-border: #b3b5b6;
 }
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #222 #333;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
 /* thème */
+header img{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    cursor: pointer;
+    z-index: 5;
+}
+/* ouverture menu */
+.menuhidden{
+    transition: all ease-in-out .3s;
+    height: 54rem;
+    width: 40rem;
+    background-color: #1e201f;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -200rem;
+    z-index: 2;
+    transition: all ease-in-out 500ms;
+    
+}
+/* fermeture menu */
+.menushown{
+    height: 54rem;
+    width: 35rem;
+    background-color: #1e201f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all ease-in-out 500ms;
+    z-index: 2;
+    visibility: visible;
+}
 header{
     line-height: 5.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
     background: url("../asset/header.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
     padding: 20rem;
     /*position: fixed;*/
     width: 100%;
@@ -48,7 +96,7 @@ header{
 header h1{
     font: 5rem'Russo One', sans-serif;
     font-size: 5.3rem;
-    text-shadow: 0.5rem 0.5rem 0 #5a5c5e;
+    text-shadow: 0.5rem 0.5rem 0 #89898a;
     transition: all 1.5s ease-in-out;
     
 }
@@ -73,26 +121,26 @@ nav ul{
     margin: 0 auto 2rem;
 }
 nav ul li{
-    display: inline-block;
-    line-height: 5rem;
+    display: block;
+    line-height: 6rem;
     text-align: center;
-    width: calc(100% / 6);
-    margin-top: -1rem;
-    width: 15rem;
+    margin-top: 4rem;
+    width: 100%;
+    
 }
 nav ul li a{
     display: block;
-    width: 12rem;
+    margin: 0 auto;
     transition: all 100ms ease-in-out;
-    
-
+    text-transform: uppercase;
 }
 nav ul li:hover a{
-    /*background-color: var(--color-default);*/
-    /*color: #fff;*/
-    color: var(--color-default);
+    margin: 0 auto;
+    display: block;
+    width: 13rem;
     border-bottom: solid;
     
+
 }
 article{
     max-width: 90rem;
