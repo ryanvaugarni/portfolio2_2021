@@ -62,12 +62,40 @@ header{
 header h1{
     font: 5rem'Russo One', sans-serif;
     font-size: 6rem;
-    text-shadow: 0.2rem 0.3rem 0 #5a5c5e;
+    text-shadow: 0.2rem 0.3rem 0 #89898a;
     transition: all 1.5s ease-in-out;
 }
 header h1:hover{
     letter-spacing: 0.4rem;
     text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
+}
+h2, h3, ul{
+    text-align: center;
+    padding: 1rem;
+}
+h3{
+    background-color: #2f312ee3;
+    color: #fff;
+    border-radius: 1rem;
+    text-shadow: 0.3rem 0.4rem 0 #181a1d;
+    transition: all 1.5s ease-in-out;
+    letter-spacing: 0.2rem;
+    max-width: 90rem;
+    padding: 1rem;
+    margin: 0 auto 2rem;
+    box-shadow: var(--color-default);
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+
+h3:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
+    transition: all 1.5s ease-in-out;   
+}
+p{
+    padding: 2rem;
+    padding-left: 2rem;
 }
 main a img{
     max-width: 4.5%;
@@ -92,14 +120,7 @@ main a{
     margin-left: 7rem;
     top: 5rem;
 }
-main span a .return{
-    display: inline-block;
-    transform: rotate(180deg) scale(1.4);
-    padding-left: 1rem;
-    vertical-align: middle;
-    font-size: 2rem;
-    color: #fff;
-}
+
 article{
     max-width: 90rem;
     min-height: 5rem;
@@ -111,23 +132,10 @@ article{
     margin-top: 4rem;
     border-radius: 1rem;
 }
-
-h3{
-    background-color: #2f312ee3;
-    color: #fff;
-    border-radius: 1rem;
-    
-}
 article img{
     width: 100%;
 }
-#gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    min-width: 30rem;
-    
-}
+
 article p a{
     background-color: #bdc3c7;
     padding: 0.5rem 3rem;
@@ -137,39 +145,33 @@ article p a{
     display: block;
     width: 20rem;
     text-align: center;
-    transition: all 500ms ease-in-out;
-    
+    transition: all 500ms ease-in-out;  
 }
 article p a:hover{
     color: #fff;
     background-color: #2f312ee3;
     transition: all 500ms ease-in-out;
-
-}
-h1{
-    font: 5rem'Russo One', sans-serif;
-}
-h2, h3, ul{
-    text-align: center;
-    padding: 1rem;
 }
 main article ul li{
     padding: 1rem;
 }
-p{
-    padding: 2rem;
-    padding-left: 2rem;
-}
-div{
-    max-width: 90rem;
-    min-height: 5rem;
-    padding: 0;
-    margin: 0 auto 2rem;
-    box-shadow: var(--color-default);
-    margin-top: 3rem;
-    border-radius: 1rem;
-}
+
 /* pied de page */
+main div a img{
+    max-width: 4.5%;
+    display: block;
+    margin-right: 10rem;
+    margin-top: -3rem;
+    position: static;
+    cursor: pointer;
+    border-radius: 9rem;
+    background-color: #fff;
+    border: solid 0rem #fff;
+    transition: 1s ease-in-out;
+}
+main div a img:hover{
+    transform: translateY(-2rem) scale(1.1);
+}
 footer{
     background-color: #2f312e;
     padding: 1rem;
