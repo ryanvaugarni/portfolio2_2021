@@ -53,7 +53,7 @@ header{
     background-image: url("../asset/header.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 20rem;
+    padding: 32rem;
     /*position: fixed;*/
     width: 100%;
     top: 0;
@@ -61,8 +61,8 @@ header{
 }
 header h1{
     font: 5rem'Russo One', sans-serif;
-    font-size: 5.3rem;
-    text-shadow: 0.5rem 0.5rem 0 #5a5c5e;
+    font-size: 6rem;
+    text-shadow: 0.2rem 0.3rem 0 #5a5c5e;
     transition: all 1.5s ease-in-out;
 }
 header h1:hover{
@@ -140,7 +140,6 @@ article p a{
     transition: all 500ms ease-in-out;
     
 }
-
 article p a:hover{
     color: #fff;
     background-color: #2f312ee3;
@@ -170,8 +169,6 @@ div{
     margin-top: 3rem;
     border-radius: 1rem;
 }
-
-
 /* pied de page */
 footer{
     background-color: #2f312e;

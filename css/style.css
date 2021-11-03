@@ -11,6 +11,7 @@ background-color: #fff;
 body{
     font: 1.6rem 'Roboto', sans-serif;
     margin: 0;
+    width: 100%;
     
 }
 h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
@@ -50,16 +51,16 @@ header img{
     position: absolute;
     top: 2rem;
     right: 2rem;
-    width: 5rem;
+    width: 3rem;
     cursor: pointer;
     z-index: 5;
 }
-/* ouverture menu */
+/* fermeture menu */
 .menuhidden{
     transition: all ease-in-out .3s;
     height: 54rem;
     width: 40rem;
-    background-color: #1e201f;
+    background-color: #1e201f3a;
     position: fixed;
     visibility: hidden;
     top: 0;
@@ -68,11 +69,11 @@ header img{
     transition: all ease-in-out 500ms;
     
 }
-/* fermeture menu */
+/* ouverture menu */
 .menushown{
-    height: 54rem;
-    width: 35rem;
-    background-color: #1e201f;
+    height: 78.8rem;
+    width: 25rem;
+    background-color: #1e201fb9;
     position: absolute;
     top: 0;
     right: 0;
@@ -87,7 +88,7 @@ header{
     background: url("../asset/header.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 20rem;
+    padding: 32rem;
     /*position: fixed;*/
     width: 100%;
     top: 0;
@@ -95,7 +96,7 @@ header{
 }
 header h1{
     font: 5rem'Russo One', sans-serif;
-    font-size: 5.3rem;
+    font-size: 6rem;
     text-shadow: 0.5rem 0.5rem 0 #89898a;
     transition: all 1.5s ease-in-out;
     
@@ -178,6 +179,21 @@ h3:hover{
     
 }
 /* pied de page */
+main a img{
+    max-width: 4.5%;
+    display: block;
+    margin-left: 130rem;
+    margin-top: -6rem;
+    position: static;
+    cursor: pointer;
+    border-radius: 9rem;
+    background-color: #fff;
+    border: solid 0rem #fff;
+    transition: 1s ease-in-out;
+}
+main a img:hover{
+    transform: translateY(-2rem) scale(1.1);
+}
 footer{
     background-color: #2f312e;
     padding: 1rem;
@@ -206,7 +222,7 @@ address a{
 }
   
 /* Responsive */
-@media screen and (max-width: 50rem){
+@media screen and (max-width: 40rem){
     header{
         padding: 2rem;
     }
