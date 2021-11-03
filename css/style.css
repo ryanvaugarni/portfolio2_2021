@@ -37,17 +37,24 @@ header{
     line-height: 5.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-image: url("../asset/header.jpg");
-    background-repeat: no-repeat;
+    background: url("../asset/header.jpg") no-repeat;
     background-size: 100%;
-    padding: 26rem;
+    padding: 20rem;
     /*position: fixed;*/
     width: 100%;
     top: 0;
 
 }
-h1{
+header h1{
     font: 5rem'Russo One', sans-serif;
+    font-size: 5.3rem;
+    text-shadow: 0.5rem 0.5rem 0 #5a5c5e;
+    transition: all 1.5s ease-in-out;
+    
+}
+header h1:hover{
+    letter-spacing: 0.4rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
 }
 h2, h3, ul{
     text-align: center;
@@ -75,14 +82,17 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    width: 100%;
-    transition: all 50ms ease-in-out;
+    width: 12rem;
+    transition: all 100ms ease-in-out;
+    
+
 }
 nav ul li:hover a{
     /*background-color: var(--color-default);*/
     /*color: #fff;*/
     color: var(--color-default);
     border-bottom: solid;
+    
 }
 article{
     max-width: 90rem;
@@ -102,8 +112,16 @@ h3{
     background-color: #2f312ee3;
     color: #fff;
     border-radius: 1rem;
-    
+    text-shadow: 0.3rem 0.4rem 0 #181a1d;
+    transition: all 1.5s ease-in-out;
+    letter-spacing: 0.2rem;
 }
+h3:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
+    transition: all 1.5s ease-in-out;   
+}
+
 #gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -135,12 +153,14 @@ address{
     font-size: 4rem;
     padding: 2rem;
 }
-
+address a{
+    color: #fff;
+}
   
 /* Responsive */
-@media screen and (max-width: 47rem){
+@media screen and (max-width: 50rem){
     header{
-        padding: 10rem;
+        padding: 2rem;
     }
     h1, h2{
         font-size: 3rem;
@@ -151,4 +171,28 @@ address{
     article:first-child{
         margin-top: 1rem;
     }
-    }
+    /* menu */
+nav ul{
+    max-width: 80rem;
+    margin: 0 auto 2rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 3rem;
+    text-align: center;
+    width: calc(100% / 5);
+    margin-top: -1rem;
+    width: 15rem;
+}
+nav ul li a{
+    display: block;
+    width: 5rem;
+    transition: all 100ms ease-in-out;
+}
+nav ul li:hover a{
+    /*background-color: var(--color-default);*/
+    /*color: #fff;*/
+    color: var(--color-default);
+    border-bottom: solid;
+}
+}

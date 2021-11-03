@@ -40,11 +40,36 @@ header{
     background-image: url("../asset/header.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 26rem;
+    padding: 20rem;
     /*position: fixed;*/
     width: 100%;
     top: 0;
 
+}
+header h1{
+    font: 5rem'Russo One', sans-serif;
+    font-size: 5.3rem;
+    text-shadow: 0.5rem 0.5rem 0 #5a5c5e;
+    transition: all 1.5s ease-in-out;
+}
+header h1:hover{
+    letter-spacing: 0.4rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
+}
+main a img{
+    max-width: 4.5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -9rem;
+    position: static;
+    cursor: pointer;
+    border-radius: 9rem;
+    background-color: #fff;
+    border: solid 0rem #fff;
+    transition: 1s ease-in-out;
+}
+main a img:hover{
+    transform: translateY(-2rem) scale(1.1);
 }
 main a{
     color: #000;
@@ -99,12 +124,14 @@ article p a{
     display: block;
     width: 20rem;
     text-align: center;
+    transition: all 500ms ease-in-out;
     
 }
 
 article p a:hover{
     color: #fff;
     background-color: #2f312ee3;
+    transition: all 500ms ease-in-out;
 
 }
 h1{
@@ -130,37 +157,8 @@ div{
     margin-top: 3rem;
     border-radius: 1rem;
 }
-/* menu */
-nav ul{
-    max-width: 80rem;
-    margin: 0 auto 2rem;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 5rem;
-    text-align: center;
-    width: calc(100% / 6);
-    margin-top: -1rem;
-    width: 15rem;
-}
-nav ul li a{
-    display: block;
-    width: 100%;
-    transition: all 50ms ease-in-out;
-}
-nav ul li:hover a{
-    /*background-color: var(--color-default);*/
-    /*color: #fff;*/
-    color: var(--color-default);
-    border-bottom: solid;
-}
-#gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    min-width: 30rem;
-    
-}
+
+
 /* pied de page */
 footer{
     background-color: #2f312e;
@@ -185,7 +183,9 @@ address{
     font-size: 4rem;
     padding: 2rem;
 }
-
+address a{
+    color: #fff;
+}
   
 /* Responsive */
 @media screen and (max-width: 47rem){
