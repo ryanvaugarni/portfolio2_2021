@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 /* reset css */
 html{
 font-size: 62.5%;
 scroll-behavior: smooth;
 /*background: #fff url(https://img.freepik.com/vecteurs-libre/fond-abstrait-blanc_23-2148806276.jpg?size=626&ext=jpg)no-repeat fixed center center / cover;*/
-background-color: #fff;
+background-color: #e9e9e9;
 }
 body{
-    font: 1.6rem 'Roboto', sans-serif;
+    font: 1.6rem 'Encode Sans Expanded', sans-serif;
     margin: 0;
     
 }
@@ -97,6 +97,7 @@ p{
     padding: 2rem;
     padding-left: 2rem;
 }
+/* fleche retour */
 main a img{
     max-width: 4.5%;
     display: block;
@@ -178,39 +179,60 @@ footer{
     margin-top: 4rem;
     
 }
-footer address ul li{
-    text-align: justify;
-}
 footer p{
     color: #fff;
     text-align: center;
-}
-address{
-    color: #fff;
-    vertical-align: middle;
-    max-width: 30rem;
-    margin: 0 auto;
+    font-size: 1.5rem;
 }
 #profil h3{
     font-size: 4rem;
     padding: 2rem;
 }
-address a{
+footer h2, h4, a{
     color: #fff;
 }
-  
+footer h4{
+    text-align: center;
+}
 /* Responsive */
-@media screen and (max-width: 47rem){
+@media screen and (max-width: 80rem){
     header{
-        padding: 10rem;
+        padding: 2rem;
     }
-    h1, h2{
-        font-size: 3rem;
+    header h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2rem;
     }
     #gallery{
         grid-template-columns: repeat(2, 2fr);
     }
     article:first-child{
         margin-top: 1rem;
+    }
+    main a img{
+        max-width: 8%;
+        display: block;
+        margin: 0 auto;
+        margin-top: -6rem;
+        position: static;
+        cursor: pointer;
+        border-radius: 9rem;
+        background-color: #fff;
+        border: solid 0rem #fff;
+        transition: 1s ease-in-out;
+    }
+    main div a img{
+        max-width: 8%;
+        display: block;
+        margin: auto;
+        margin-top: -2rem;
+        position: static;
+        cursor: pointer;
+        border-radius: 9rem;
+        background-color: #fff;
+        border: solid 0rem #fff;
+        transition: 1s ease-in-out;
     }
     }

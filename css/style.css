@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 /* reset css */
 html{
 font-size: 62.5%;
 scroll-behavior: smooth;
 /*background: #fff url(https://img.freepik.com/vecteurs-libre/fond-abstrait-blanc_23-2148806276.jpg?size=626&ext=jpg)no-repeat fixed center center / cover;*/
-background-color: #fff;
+background-color: #e9e9e9;
 }
 body{
-    font: 1.6rem 'Roboto', sans-serif;
+    font: 1.6rem 'Encode Sans Expanded', sans-serif;
     margin: 0;
     width: 100%;
 }
@@ -193,37 +193,35 @@ main a img:hover{
 footer{
     background-color: #2f312e;
     padding: 1rem;
-    margin-top: 4rem;
-    
-}
-footer address ul li{
-    text-align: justify;
+    margin-top: 4rem; 
 }
 footer p{
     color: #fff;
     text-align: center;
-}
-address{
-    color: #fff;
-    vertical-align: middle;
-    max-width: 30rem;
-    margin: 0 auto;
+    font-size: 1.5rem;
 }
 #profil h3{
     font-size: 4rem;
     padding: 2rem;
 }
-address a{
+footer h2, h4{
     color: #fff;
 }
-  
+footer h4{
+    text-align: center;
+}
+
 /* Responsive */
-@media screen and (max-width: 40rem){
+@media screen and (max-width: 40rem)and (min-width: 10rem){
     header{
         padding: 2rem;
     }
-    h1, h2{
-        font-size: 3rem;
+    header h1{
+        font-size: 5rem;
+        margin-top: 3rem;
+    }
+    h2{
+        font-size: 2rem;
     }
     #gallery{
         grid-template-columns: repeat(2, 2fr);
@@ -231,28 +229,69 @@ address a{
     article:first-child{
         margin-top: 1rem;
     }
+    /* fleche haut */
+    main a img{
+        max-width: 8%;
+        display: block;
+        margin:auto;
+        margin-top: 2rem;
+        position: static;
+        cursor: pointer;
+        border-radius: 9rem;
+        background-color: #fff;
+        border: solid 0rem #fff;
+        transition: 1s ease-in-out;
+    }
+    main a img:hover{
+        transform: translateY(-2rem) scale(1.1);
+    }
     /* menu */
-nav ul{
-    max-width: 80rem;
-    margin: 0 auto 2rem;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 3rem;
-    text-align: center;
-    width: calc(100% / 5);
-    margin-top: -1rem;
-    width: 15rem;
-}
-nav ul li a{
-    display: block;
-    width: 5rem;
-    transition: all 100ms ease-in-out;
-}
-nav ul li:hover a{
-    /*background-color: var(--color-default);*/
-    /*color: #fff;*/
-    color: var(--color-default);
-    border-bottom: solid;
-}
+    nav ul{
+        max-width: 80rem;
+        margin: 0 auto 2rem;
+    }
+    nav ul li{
+        display: block;
+        line-height: 6rem;
+        text-align: center;
+        margin-top: 4rem;
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        margin: 0 auto;
+        transition: all 100ms ease-in-out;
+        text-transform: uppercase;
+    }
+    nav ul li:hover a{
+        margin: 0 auto;
+        display: block;
+        width: 13rem;
+        border-bottom: solid;
+    }
+    /* fermeture menu */
+    .menuhidden{
+        transition: all ease-in-out .3s;
+        height: 100%;
+        width: 100%;
+        background-color: #1e201f;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -200rem;
+        z-index: 2;
+        transition: all ease-in-out 500ms;
+    }
+    /* ouverture menu */
+    .menushown{
+        height: 100%;
+        width: 100%;
+        background-color: #1e201f;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all ease-in-out 150ms;
+        z-index: 2;
+        visibility: visible;
+    }
 }
