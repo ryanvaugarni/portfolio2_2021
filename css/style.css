@@ -200,10 +200,6 @@ footer p{
     text-align: center;
     font-size: 1.5rem;
 }
-#profil h3{
-    font-size: 4rem;
-    padding: 2rem;
-}
 footer h2, h4{
     color: #fff;
 }
@@ -212,7 +208,7 @@ footer h4{
 }
 
 /* Responsive */
-@media screen and (max-width: 40rem)and (min-width: 10rem){
+@media screen and (max-width: 70rem)and (min-width: 10rem){
     header{
         padding: 2rem;
     }
@@ -227,24 +223,33 @@ footer h4{
         grid-template-columns: repeat(2, 2fr);
     }
     article:first-child{
-        margin-top: 1rem;
+        margin-top: 2rem;
+    }
+    article{
+        max-width: 90rem;
+        min-height: 5rem;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+    h3{
+        font-size: small;
+    }
+    h3:hover{
+        letter-spacing: 0.5rem;  
+    }
+    p{
+        padding: 1rem;
+        padding-left: 2rem;
     }
     /* fleche haut */
     main a img{
         max-width: 8%;
-        display: block;
         margin:auto;
-        margin-top: 2rem;
-        position: static;
-        cursor: pointer;
-        border-radius: 9rem;
-        background-color: #fff;
-        border: solid 0rem #fff;
-        transition: 1s ease-in-out;
+        margin-top: 1rem; 
     }
-    main a img:hover{
-        transform: translateY(-2rem) scale(1.1);
-    }
+
     /* menu */
     nav ul{
         max-width: 80rem;
@@ -284,7 +289,7 @@ footer h4{
     }
     /* ouverture menu */
     .menushown{
-        height: 100%;
+        height: 250%;
         width: 100%;
         background-color: #1e201f;
         position: absolute;
@@ -293,5 +298,22 @@ footer h4{
         transition: all ease-in-out 150ms;
         z-index: 2;
         visibility: visible;
+    }
+    footer{
+        padding: 1rem;
+        margin-top: 4rem; 
+    }
+    footer p{
+        color: #fff;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    footer h2, h4{
+        color: #fff;
+        
+    }
+    footer h4{
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
