@@ -109,6 +109,7 @@ header{
     color: rgb(255, 255, 255);
     background: url("../asset/header.jpg") no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
     background-position: center center;
     padding: 32rem;
     /*position: fixed;*/

@@ -50,9 +50,10 @@ header{
     line-height: 5.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-image: url("../asset/header.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../asset/header.jpg") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
     padding: 32rem;
     /*position: fixed;*/
     width: 100%;
