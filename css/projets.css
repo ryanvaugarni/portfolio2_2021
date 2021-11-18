@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 /* reset css */
 html{
@@ -197,7 +196,7 @@ footer h4{
 /* Responsive */
 @media screen and (max-width: 80rem){
     header{
-        padding: 2rem;
+        padding: 8rem;
     }
     header h1{
         font-size: 5rem;
@@ -211,28 +210,14 @@ footer h4{
     article:first-child{
         margin-top: 1rem;
     }
+    /* flêche vers le bas */
     main a img{
-        max-width: 8%;
-        display: block;
-        margin: 0 auto;
-        margin-top: -6rem;
-        position: static;
-        cursor: pointer;
-        border-radius: 9rem;
-        background-color: #fff;
-        border: solid 0rem #fff;
-        transition: 1s ease-in-out;
+        max-width: 6%;
+        margin-top: -8rem;
     }
+    /* fleche vers le haut */
     main div a img{
-        max-width: 8%;
-        display: block;
-        margin: auto;
+        max-width: 6%;
         margin-top: -2rem;
-        position: static;
-        cursor: pointer;
-        border-radius: 9rem;
-        background-color: #fff;
-        border: solid 0rem #fff;
-        transition: 1s ease-in-out;
     }
     }

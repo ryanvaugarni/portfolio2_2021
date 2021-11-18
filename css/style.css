@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 /* reset css */
 html{
@@ -68,29 +67,6 @@ header img{
     transition: all ease-in-out 500ms;
     
 }
-main div a img{
-    max-width: 4.5%;
-    display: block;
-    margin: auto;
-    margin-top: -9rem;
-    position: static;
-    cursor: pointer;
-    border-radius: 9rem;
-    background-color: #fff;
-    border: solid 0rem #fff;
-    transition: 1s ease-in-out;
-}
-main div a img:hover{
-    transform: translateY(-2rem) scale(1.1);
-}
-main a{
-    color: #000;
-    font-weight: 700;
-    padding-bottom: 2rem;
-    font-size: 2rem;
-    margin-left: 7rem;
-    top: 5rem;
-}
 /* ouverture menu */
 .menushown{
     height: 78.8rem;
@@ -103,6 +79,31 @@ main a{
     z-index: 2;
     visibility: visible;
 }
+/* flêche vers le bas */
+main div a img{
+    max-width: 4.5%;
+    display: block;
+    margin: auto;
+    margin-top: -9rem;
+    position: static;
+    cursor: pointer;
+    border-radius: 9rem;
+    background-color: #fff;
+    border: solid 0rem #fff;
+    transition: 500ms ease-in-out;
+}
+main div a img:hover{
+    transform: translateY(-2rem) scale(1.1);
+}
+main a{
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    margin-left: 7rem;
+    top: 5rem;
+}
+/* en-tête */
 header{
     line-height: 5.5rem;
     text-align: center;
@@ -128,6 +129,7 @@ header h1:hover{
     letter-spacing: 0.4rem;
     text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
 }
+/* corps du texte */
 h2, h3, ul{
     text-align: center;
     padding: 1rem;
@@ -198,7 +200,7 @@ h3:hover{
     min-width: 30rem;
     
 }
-/* pied de page */
+/* flêche vers le haut */
 main a img{
     max-width: 4.5%;
     display: block;
@@ -209,11 +211,12 @@ main a img{
     border-radius: 9rem;
     background-color: #fff;
     border: solid 0rem #fff;
-    transition: 1s ease-in-out;
+    transition: 500ms ease-in-out;
 }
 main a img:hover{
     transform: translateY(-2rem) scale(1.1);
 }
+/* pied de page */
 footer{
     background-color: #2f312e;
     padding: 1rem;
@@ -234,11 +237,12 @@ footer h4{
 /* Responsive */
 @media screen and (max-width: 70rem)and (min-width: 10rem){
     header{
-        padding: 2rem;
+        padding: 8rem;
     }
     header h1{
-        font-size: 5rem;
+        font-size: 3.7rem;
         margin-top: 3rem;
+        text-shadow: 0.3rem 0.3rem 0 #89898a;
     }
     h2{
         font-size: 2rem;
@@ -266,13 +270,6 @@ footer h4{
         padding: 1rem;
         padding-left: 2rem;
     }
-    /* fleche haut */
-    main a img{
-        max-width: 8%;
-        margin:auto;
-        margin-top: 1rem; 
-    }
-
     /* menu */
     nav ul{
         max-width: 80rem;
@@ -321,7 +318,23 @@ footer h4{
         transition: all ease-in-out 150ms;
         z-index: 2;
         visibility: visible;
+
     }
+    /* flêche vers le bas */
+    main div a img{
+        margin-top: -8rem;
+        max-width: 5%;
+    }
+    main div a img:hover{
+        transform: translateY(-2rem) scale(1.1);
+    }
+    /* fleche vers haut */
+    main a img{
+        max-width: 5%;
+        margin:auto;
+        margin-top: 1rem; 
+    }
+    /* pied de page */
     footer{
         padding: 1rem;
         margin-top: 4rem; 
@@ -333,7 +346,6 @@ footer h4{
     }
     footer h2, h4{
         color: #fff;
-        
     }
     footer h4{
         text-align: center;
