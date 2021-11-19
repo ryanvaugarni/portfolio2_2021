@@ -237,15 +237,15 @@ footer h4{
 /* Responsive */
 @media screen and (max-width: 70rem)and (min-width: 10rem){
     header{
-        padding: 8rem;
+        padding: 7rem;
     }
     header h1{
-        font-size: 3.7rem;
+        font-size: 3rem;
         margin-top: 3rem;
         text-shadow: 0.3rem 0.3rem 0 #89898a;
     }
     h2{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     #gallery{
         grid-template-columns: repeat(2, 2fr);
