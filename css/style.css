@@ -69,7 +69,7 @@ header img{
 }
 /* ouverture menu */
 .menushown{
-    height: 78.8rem;
+    height: 100vh;
     width: 25rem;
     background-color: #1e201fb9;
     position: absolute;
@@ -115,6 +115,7 @@ header{
     padding: 32rem;
     /*position: fixed;*/
     width: 100%;
+    height: 100vh;
     top: 0;
 
 }
@@ -238,6 +239,7 @@ footer h4{
 @media screen and (max-width: 70rem)and (min-width: 10rem){
     header{
         padding: 7rem;
+        height: 35vh;
     }
     header h1{
         font-size: 3rem;
@@ -315,6 +317,7 @@ footer h4{
         position: absolute;
         top: 0;
         right: 0;
+        bottom: 0;
         transition: all ease-in-out 150ms;
         z-index: 2;
         visibility: visible;
@@ -350,5 +353,13 @@ footer h4{
     footer h4{
         text-align: center;
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation:landscape)  {
+    
+
+    header{
+        height: 100vh;
     }
 }
