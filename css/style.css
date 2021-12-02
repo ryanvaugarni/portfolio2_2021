@@ -122,7 +122,7 @@ header{
 header h1{
     font: 5rem'Russo One', sans-serif;
     font-size: 5rem;
-    text-shadow: 0.5rem 0.5rem 0 #89898a;
+    text-shadow: 0.3rem 0.3rem 0 #929292;
     transition: all 1.5s ease-in-out;
     
 }
@@ -166,13 +166,14 @@ nav ul li:hover a{
     width: 13rem;
     border-bottom: solid;
 }
+/* article */
 article{
     max-width: 90rem;
     min-height: 5rem;
     padding: 0;
     border: solid 0.1rem transparent;
     background-color: #e0e2e182;
-    margin: 0 auto 2rem;
+    margin: 0 auto 3rem;
     box-shadow: 0 0 1.0rem var(--color-border);
     margin-top: 5rem;
     border-radius: 1rem;
@@ -183,7 +184,7 @@ article:first-child{
 h3{
     background-color: #2f312ee3;
     color: #fff;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     text-shadow: 0.3rem 0.4rem 0 #181a1d;
     transition: all 1.5s ease-in-out;
     letter-spacing: 0.2rem;
@@ -236,7 +237,7 @@ footer h4{
 }
 
 /* Responsive */
-@media screen and (max-width: 70rem)and (min-width: 20rem){
+@media screen and (max-width: 60rem)and (min-width: 10rem){
     header{
         padding: 7rem;
         height: 35vh;
@@ -251,9 +252,6 @@ footer h4{
     }
     #gallery{
         grid-template-columns: repeat(2, 2fr);
-    }
-    article:first-child{
-        margin-top: 2rem;
     }
     article{
         max-width: 90rem;
@@ -273,66 +271,29 @@ footer h4{
         padding-left: 2rem;
     }
     /* menu */
-    nav ul{
-        max-width: 80rem;
-        margin: 0 auto 2rem;
-    }
-    nav ul li{
-        display: block;
-        line-height: 6rem;
-        text-align: center;
-        margin-top: 4rem;
-        width: 100%;
-    }
-    nav ul li a{
-        display: block;
-        margin: 0 auto;
-        transition: all 100ms ease-in-out;
-        text-transform: uppercase;
-    }
     nav ul li:hover a{
-        margin: 0 auto;
-        display: block;
-        width: 13rem;
         border-bottom: solid;
-    }
-    /* fermeture menu */
-    .menuhidden{
-        transition: all ease-in-out .3s;
-        height: 100%;
-        width: 100%;
-        background-color: #1e201f;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        right: -200rem;
-        z-index: 2;
-        transition: all ease-in-out 500ms;
     }
     /* ouverture menu */
     .menushown{
         height: 100%;
         width: 100%;
         background-color: #1e201f;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        transition: all ease-in-out 150ms;
+        position: fixed;
+        transition: all ease-in-out 250ms;
         z-index: 2;
-        visibility: visible;
     }
     /* flêche vers le bas */
     main div a img{
         margin-top: -8rem;
-        max-width: 5%;
+        max-width: 6%;
     }
     main div a img:hover{
         transform: translateY(-2rem) scale(1.1);
     }
     /* fleche vers haut */
     main a img{
-        max-width: 5%;
+        max-width: 6%;
         margin:auto;
         margin-top: 1rem; 
     }

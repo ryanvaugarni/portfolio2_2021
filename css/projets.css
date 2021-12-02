@@ -62,8 +62,8 @@ header{
 }
 header h1{
     font: 5rem'Russo One', sans-serif;
-    font-size: 6rem;
-    text-shadow: 0.2rem 0.3rem 0 #89898a;
+    font-size: 5rem;
+    text-shadow: 0.3rem 0.3rem 0 #929292;
     transition: all 1.5s ease-in-out;
 }
 header h1:hover{
@@ -195,9 +195,10 @@ footer h4{
     text-align: center;
 }
 /* Responsive */
-@media screen and (max-width: 80rem){
+@media screen and (max-width: 60rem)and (min-width: 10rem){
     header{
         padding: 7rem;
+        height: 35vh;
     }
     header h1{
         font-size: 3rem;
@@ -207,21 +208,23 @@ footer h4{
     h2{
         font-size: 1.7rem;
     }
+    h3{
+        margin-top: 9rem;
+        font-size: small;
+    }
     #gallery{
         grid-template-columns: repeat(2, 2fr);
-    }
-    article:first-child{
-        margin-top: 1rem;
     }
     /* flêche vers le bas */
     main a img{
         max-width: 6%;
-        margin-top: -8rem;
+        margin-top: auto -8rem;
     }
     /* fleche vers le haut */
     main div a img{
         max-width: 6%;
         margin-top: -2rem;
+        margin: auto;
     }
     /* pied de page */
     footer{
