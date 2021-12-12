@@ -16,5 +16,5 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
     date = new Date();
     foot = document.querySelector("footer p");
-    foot.innerText += `${date.getFullYear()} - Ryan Vaugarni | All rights reserved`
+    foot.innerText += `${date.getFullYear()} - Ryan Vaugarni | Tous droits réservés`
 })

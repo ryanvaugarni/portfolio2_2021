@@ -206,9 +206,8 @@ h3:hover{
 main a img{
     max-width: 4.5%;
     display: block;
-    margin-left: 130rem;
-    margin-top: -6rem;
-    position: static;
+    margin: auto;
+    margin-top: -2rem;
     cursor: pointer;
     border-radius: 9rem;
     background-color: #fff;
