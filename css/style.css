@@ -90,15 +90,12 @@ header{
 }
 header h1{
     font: 5rem'Russo One', sans-serif;
-    font-size: 5rem;
-    text-shadow: 0.3rem 0.3rem 0 #929292;
+    font-size: 6rem;
+    text-shadow: 0.3rem 0.3rem 0 #b0b0b0;
     transition: all 1.5s ease-in-out; 
+    letter-spacing: .4rem;
+    margin-top: -4rem;
 }
-header h1:hover{
-    letter-spacing: 0.4rem;
-    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
-}
-
 /* FLECHE VERS LE BAS */
 .bas{
     max-width: 4.5%;
@@ -215,9 +212,10 @@ article h3:hover{
     text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
     transition: all 1.5s ease-in-out;   
 }
+/* CONTENEUR */
 main article ul{
     padding: 3rem;
-    background-color: #2f312e;
+    background-color: #373936cc;
     max-width: 30%;
     border-radius: 1rem;
     display: inline-block;
@@ -255,6 +253,13 @@ footer{
     background-color: #2f312e;
     padding: 1rem;
     margin-top: 4rem; 
+}
+footer h2{
+    padding: 5rem;
+    font-size: 3rem;
+}
+footer h3{
+    font-size: 2rem;
 }
 footer p{
     color: #fff;
