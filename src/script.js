@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
         else{
             menu.src = "./asset/menu1.png"}
-
     })
     date = new Date();
     foot = document.querySelector("footer p");
