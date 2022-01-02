@@ -270,6 +270,7 @@ footer h4{
     h2{
         font-size: 1.7rem;
     }
+
     #gallery{
         grid-template-columns: repeat(2, 2fr);
     }
@@ -289,6 +290,17 @@ footer h4{
     p{
         padding: 1rem;
         padding-left: 2rem;
+    }
+    main article ul{
+        padding: 1rem;
+        background-color: #2f312eb7;
+        max-width: 91%;
+        border-radius: 1rem;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem; 
+        margin-top: 2rem;
     }
     /* menu */
     nav ul li:hover a{
@@ -315,7 +327,7 @@ footer h4{
     main a img{
         max-width: 6%;
         margin:auto;
-        margin-top: 1rem; 
+        margin-top: -2rem; 
     }
     /* pied de page */
     footer{
