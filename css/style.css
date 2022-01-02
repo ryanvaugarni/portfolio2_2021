@@ -217,7 +217,7 @@ article h3:hover{
     transition: all 1.5s ease-in-out;   
 }
 
-#gallery{
+.gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
@@ -271,7 +271,7 @@ footer h4{
         font-size: 1.7rem;
     }
 
-    #gallery{
+    .gallery{
         grid-template-columns: repeat(2, 2fr);
     }
     article{
