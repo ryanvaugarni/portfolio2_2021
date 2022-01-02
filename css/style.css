@@ -4,7 +4,6 @@
 html{
 font-size: 62.5%;
 scroll-behavior: smooth;
-/*background: #fff url(https://img.freepik.com/vecteurs-libre/fond-abstrait-blanc_23-2148806276.jpg?size=626&ext=jpg)no-repeat fixed center center / cover;*/
 background-color: #e9e9e9;
 }
 body{
@@ -53,6 +52,31 @@ header img{
     cursor: pointer;
     z-index: 5;
 }
+/* en-tête */
+header{
+    line-height: 5.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: url("../asset/header.jpg") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    padding: 32rem;
+    /*position: fixed;*/
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+header h1{
+    font: 5rem'Russo One', sans-serif;
+    font-size: 5rem;
+    text-shadow: 0.3rem 0.3rem 0 #929292;
+    transition: all 1.5s ease-in-out; 
+}
+header h1:hover{
+    letter-spacing: 0.4rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
+}
 /* fermeture menu */
 .menuhidden{
     transition: all ease-in-out .3s;
@@ -88,12 +112,15 @@ main div a img{
     position: static;
     cursor: pointer;
     border-radius: 9rem;
-    background-color: #fff;
-    border: solid 0rem #fff;
     transition: 500ms ease-in-out;
 }
 main div a img:hover{
     transform: translateY(-2rem) scale(1.1);
+}
+/* image de formations expériences... */
+article ul li a img{
+    max-width: 21%;
+    border-radius: 3rem;
 }
 main a{
     color: #000;
@@ -103,40 +130,22 @@ main a{
     margin-left: 7rem;
     top: 5rem;
 }
-/* en-tête */
-header{
-    line-height: 5.5rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background: url("../asset/header.jpg") no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center center;
-    padding: 32rem;
-    /*position: fixed;*/
-    width: 100%;
-    height: 100vh;
-    top: 0;
-
-}
-header h1{
-    font: 5rem'Russo One', sans-serif;
-    font-size: 5rem;
-    text-shadow: 0.3rem 0.3rem 0 #929292;
-    transition: all 1.5s ease-in-out;
-    
-}
-header h1:hover{
-    letter-spacing: 0.4rem;
-    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;   
-}
 /* corps du texte */
 h2, h3, ul{
     text-align: center;
     padding: 1rem;
 }
-main article ul li{
-    padding: 1rem;
+/* article formations experiences...*/
+main article ul{
+    padding: 3rem;
+    background-color: #2f312eb7;
+    max-width: 30%;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin: 2rem;  
 }
 p{
     padding: 2rem;
@@ -167,8 +176,8 @@ nav ul li:hover a{
     border-bottom: solid;
 }
 /* article */
-article{
-    max-width: 90rem;
+section, article{
+    max-width: 130rem;
     min-height: 5rem;
     padding: 0;
     border: solid 0.1rem transparent;
@@ -178,10 +187,7 @@ article{
     margin-top: 5rem;
     border-radius: 1rem;
 }
-article:first-child{
-    margin-top: 4rem;
-}
-h3{
+section h3{
     background-color: #2f312ee3;
     color: #fff;
     border-radius: 1rem 1rem 0 0;
@@ -189,7 +195,23 @@ h3{
     transition: all 1.5s ease-in-out;
     letter-spacing: 0.2rem;
 }
-h3:hover{
+section h3:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
+    transition: all 1.5s ease-in-out;
+}
+article:first-child{
+    margin-top: 4rem;
+}
+article h3{
+    background-color: #2f312ee3;
+    color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    text-shadow: 0.3rem 0.4rem 0 #181a1d;
+    transition: all 1.5s ease-in-out;
+    letter-spacing: 0.2rem;
+}
+article h3:hover{
     letter-spacing: 0.5rem;
     text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
     transition: all 1.5s ease-in-out;   
@@ -211,7 +233,6 @@ main a img{
     cursor: pointer;
     border-radius: 9rem;
     background-color: #fff;
-    border: solid 0rem #fff;
     transition: 500ms ease-in-out;
 }
 main a img:hover{
@@ -235,7 +256,7 @@ footer h4{
     text-align: center;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media screen and (max-width: 60rem)and (min-width: 10rem){
     header{
         padding: 7rem;
