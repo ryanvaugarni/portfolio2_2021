@@ -97,6 +97,31 @@ header h1{
     margin-top: -4rem;
 }
 /* FLECHE VERS LE BAS */
+.hide_menu{
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+    width: 30rem;
+    top: 0;
+    transition: all .3s;
+    right: -200rem;
+    visibility: hidden;
+}
+.show_menu>ul>li,.hide_menu>ul>li{
+    padding: 1rem;
+}
+.show_menu{
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+    width: 30rem;
+    top: 0;
+    transition: all .3s;
+    right: 0;
+    visibility: visible;
+    background-color: #1e201fb9;
+
+}
 .bas{
     max-width: 4.5%;
     display: block;
@@ -111,8 +136,7 @@ header h1{
 .bas:hover{
     transform: translateY(-2rem) scale(1.1);
 }
-
-/* MENU DEBUT */
+/* MENU DEB*/
 nav ul{
     max-width: 80rem;
     margin: 0 auto 2rem;
@@ -143,23 +167,22 @@ nav ul li:hover a{
     background-color: #1e201fb9;
     position: absolute;
     top: 0;
-    right: 0;
-    transition: all ease-in-out 150ms;
-    z-index: 2;
-    visibility: visible;
+    right: -20rem;
+    transition: all .3s;
+    z-index: 10;
+    visibility: hidden;
 }
 /* FERMETURE MENU */
 .menuhidden{
     transition: all ease-in-out .3s;
-    height: 54rem;
-    width: 40rem;
+    height: 100vh;
+    width: 25rem;
     background-color: #1e201f3a;
-    position: fixed;
-    visibility: hidden;
+    position: absolute;
     top: 0;
-    right: -200rem;
+    right: 20rem;
     z-index: 2;
-    transition: all ease-in-out 500ms;  
+    transition: all .3s;
 }
 /* MENU FIN */
 
@@ -275,6 +298,28 @@ footer h4{
 
 /* RESPONSIVE */
 @media screen and (max-width: 60rem)and (min-width: 10rem){
+    .show_menu{
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+        width: 100%;
+        top: 0;
+        transition: all .3s;
+        right: 0;
+        visibility: visible;
+        background-color: #1e201f;
+    
+    }
+    .show_menu>ul>li{
+        font-size: 2.5rem;
+        line-height: 10rem;
+    }
+    .show_menu>ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     header{
         padding: 7rem;
         height: 35vh;
@@ -324,14 +369,7 @@ footer h4{
         border-bottom: solid;
     }
     /* ouverture menu */
-    .menushown{
-        height: 100%;
-        width: 100%;
-        background-color: #1e201f;
-        position: fixed;
-        transition: all ease-in-out 250ms;
-        z-index: 2;
-    }
+
     /* flêche vers le bas */
     main div a img{
         margin-top: -8rem;
