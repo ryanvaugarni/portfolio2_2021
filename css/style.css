@@ -90,10 +90,13 @@ header{
 header h1{
     font: 5rem 'Russo One', sans-serif;
     font-size: 6rem;
-    text-shadow: 0.3rem 0.3rem 0 #b0b0b0;
     transition: all 1.5s ease-in-out; 
-    letter-spacing: .4rem;
     margin-top: -4rem;
+    letter-spacing: .6rem;
+}
+header h1:hover{
+    text-shadow: 0.3rem 0.3rem 0 #464444;
+    letter-spacing: .9rem;
 }
 /* FLECHE VERS LE BAS */
 .hide_menu{
@@ -211,13 +214,11 @@ section h3{
     background-color: #2f312ee3;
     color: #fff;
     border-radius: 1rem 1rem 0 0;
-    text-shadow: 0.3rem 0.4rem 0 #181a1d;
     transition: all 1.5s ease-in-out;
     letter-spacing: 0.2rem;
 }
 section h3:hover{
     letter-spacing: 0.5rem;
-    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
     transition: all 1.5s ease-in-out;
 }
 article:first-child{
@@ -227,13 +228,11 @@ article h3{
     background-color: #2f312ee3;
     color: #fff;
     border-radius: 1rem 1rem 0 0;
-    text-shadow: 0.3rem 0.4rem 0 #181a1d;
     transition: all 1.5s ease-in-out;
     letter-spacing: 0.2rem;
 }
 article h3:hover{
     letter-spacing: 0.5rem;
-    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
     transition: all 1.5s ease-in-out;   
 }
 /* CONTENEUR */
