@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ubuntu&display=swap');
 /* reset css */
 html{
     font-size: 62.5%;
@@ -73,24 +74,16 @@ h2, h3, ul{
     text-align: center;
     padding: 1rem;
 }
-h3{
-    background-color: #2f312ee3;
-    color: #fff;
-    border-radius: 1rem;
-    text-shadow: 0.3rem 0.4rem 0 #181a1d;
-    transition: all 1.5s ease-in-out;
-    letter-spacing: 0.2rem;
-    max-width: 90rem;
-    padding: 1rem;
-    margin: 0 auto 2rem;
-    box-shadow: var(--color-default);
-    margin-top: 3rem;
-    border-radius: 1rem;
+
+div h3{
+        font-family: 'Inter', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3rem;
+        margin-top: 2rem;
 }
 
-h3:hover{
+div h3:hover{
     letter-spacing: 0.5rem;
-    text-shadow: 0.3rem 0.3rem 0 #272525, 0.5rem 0.5rem 0 #18212b;
     transition: all 1.5s ease-in-out;   
 }
 p{
@@ -175,23 +168,38 @@ main div a img:hover{
 footer{
     background-color: #2f312e;
     padding: 1rem;
-    margin-top: 4rem;
-    
+    margin-top: 4rem; 
+}
+footer h4{
+    padding: 5rem;
+    font-size: 3rem;
+}
+footer h5{
+    font-size: 2rem;
 }
 footer p{
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
 }
-#profil h3{
-    font-size: 4rem;
-    padding: 2rem;
-}
-footer h2, h4, a{
+footer h4, h5{
     color: #fff;
 }
-footer h4{
+footer h4, h5{
     text-align: center;
+}
+footer h3 a{
+    font-size: 2rem;
+    color: #fff;
+}
+.mail{
+    font-size: 4rem;
+}
+.link{
+    width: 3.5rem;
+    /* transform: translateY(-4.5rem); */
+    cursor: pointer;
+    /* float: right;*/
 }
 /* RESPONSIVE */
 @media screen and (max-width: 60rem) and (min-width: 10rem){
