@@ -202,44 +202,92 @@ footer h3 a{
     /* float: right;*/
 }
 /* RESPONSIVE */
-@media screen and (max-width: 60rem) and (min-width: 10rem){
+@media screen and (max-width: 70rem)and (min-width: 10rem){
+    .show_menu{
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+        width: 100%;
+        top: 0;
+        transition: all .3s;
+        right: 0;
+        visibility: visible;
+        background-color: #1e201f;
+    
+    }
+    .show_menu>ul>li{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .show_menu>ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     header{
-        padding: 7rem;
-        height: 35vh;
+        padding: 1rem;
+        height: 36vh;
+        background: #30312E;
     }
     header h1{
         font-size: 3rem;
-        margin-top: 3rem;
-        text-shadow: 0.3rem 0.3rem 0 #89898a;
+        margin-top: 9rem;
     }
     h2{
         font-size: 1.7rem;
+        margin-top: 1rem;
     }
-    h3{
-        margin-top: 9rem;
-        font-size: small;
-    }
-    #gallery{
+
+    .gallery{
         grid-template-columns: repeat(2, 2fr);
     }
-    figure{
-        position: relative;
-        left: 60%;
-        margin: 0;
+    article{
+        max-width: 90rem;
+        min-height: 5rem;
         padding: 0;
-        opacity: 0;
-        transition : all 1.5s ease;
-      }
-    /* flêche vers le bas */
-    main a img{
-        max-width: 6%;
-        margin-top: auto -8rem;
+        width: 100%;
+        height: 100%;
     }
-    /* fleche vers le haut */
+
+    main article ul{
+        max-width: 35rem;
+    }
+    h3{
+        font-size: small;
+    }
+    h3:hover{
+        letter-spacing: 0.5rem;  
+    }
+    p{
+        padding: 1rem;
+        padding-left: 2rem;
+    }
+  .haut{
+      max-width: 8%;
+  }
+  .bas{
+      max-width: 8%;
+  }
+    /* menu */
+    nav ul li:hover a{
+        border-bottom: solid;
+    }
+    /* ouverture menu */
+
+    /* flêche vers le bas */
     main div a img{
-        max-width: 6%;
-        margin-top: -2rem;
-        margin: auto;
+        
+        max-width: 8%;
+    }
+    main div a img:hover{
+        transform: translateY(-2rem) scale(1.1);
+    }
+    /* fleche vers haut */
+    main a img{
+        max-width: 8%;
+        margin:auto;
+        margin-top: -9rem; 
     }
     /* pied de page */
     footer{
@@ -251,11 +299,16 @@ footer h3 a{
         text-align: center;
         font-size: 1.3rem;
     }
-    footer h2, h4{
+    footer h5, h6{
         color: #fff;
     }
-    footer h4{
+    footer h6{
         text-align: center;
         font-size: 1.5rem;
+    }
+}
+@media screen and (orientation:landscape)  {
+    header{
+        height: 100vh;
     }
 }
