@@ -72,7 +72,6 @@ header img{
     cursor: pointer;
     z-index: 5;
 }
-
 /* EN TETE */
 header{
     line-height: 5.5rem;
@@ -252,14 +251,10 @@ main article ul{
     margin-left: 2rem;
     margin-top: 1rem;
     margin: 2rem;  
+    transition: all 0.5s ease-in-out;
 }
 main article ul:hover{
-    transform:scale(1.1);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    transform:scale(1.1);  
 }
 
  /* LOGO COMPETENCES */
@@ -291,13 +286,18 @@ footer{
     width: 100%;
     background-color: #2f312e;
     padding: 1rem;
-    margin-top: 4rem; 
+    margin-top: 2rem; 
 }
-footer h5{
+footer h4::before, footer h4::after{
+    content: url('../asset/mail.png');
+    margin: auto 2rem;
+}
+footer h4{
+    display: block;
     padding: 5rem;
     font-size: 3rem;
 }
-footer h6{
+footer h5{
     font-size: 2rem;
 }
 footer p{
@@ -305,28 +305,32 @@ footer p{
     text-align: center;
     font-size: 1.5rem;
 }
-footer h5, h6{
+footer h4, h5{
     color: #fff;
-}
-footer h5, h6{
     text-align: center;
 }
 .mail{
     font-size: 4rem;
 }
 .link{
-    width: 3.5rem;
-    /* transform: translateY(-4.5rem); */
+    width: 4rem;
     cursor: pointer;
-    /* float: right;*/
 }
-.ul_icone{
+footer ul li{
+    display: block;
     float: right;
-    right: 0;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 20rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    transform: translateY(-3rem);
+    margin: -2rem;
+}
+footer .link{
+    margin: auto 1rem;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 70rem)and (min-width: 10rem){
@@ -430,13 +434,19 @@ footer h5, h6{
         text-align: center;
         font-size: 1.5rem;
     }
-    .ul_icone{
+    footer ul li{
+        display: block;
         float: center;
-        right: 0;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 20rem;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        transform: translateY(1rem);
+        margin: 2rem;
+    }
+    footer ul{
+        list-style: none;
+        margin: 0;
+        margin-right: 13rem;
+        padding: 0;
     }
 }
 @media screen and (orientation:landscape) and (max-width: 63rem) {
@@ -451,15 +461,8 @@ footer h5, h6{
         margin: 0.5rem;
     } */
 }
-/* .ul_icone{
-    float: right;
-    right: 0;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 20rem;
+footer ul li{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: -1rem;
 }
-.ul_icone>li{
- 
-    text-align: center;
-} */

@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     list-style: none;
 }
 a{
-    color: #222;
+    color: rgb(242, 236, 236);
     text-decoration: none;
 }
 *{
@@ -75,14 +75,13 @@ h2, h3, ul{
     padding: 1rem;
 }
 
-div h3{
+main h3{
         font-family: 'Inter', sans-serif;
         font-family: 'Ubuntu', sans-serif;
         font-size: 3rem;
         margin-top: 2rem;
 }
-
-div h3:hover{
+main h3:hover{
     letter-spacing: 0.5rem;
     transition: all 1.5s ease-in-out;   
 }
@@ -114,7 +113,7 @@ main a{
     margin-left: 7rem;
     top: 5rem;
 }
-article{
+article section{
     max-width: 90rem;
     min-height: 5rem;
     padding: 0;
@@ -125,11 +124,11 @@ article{
     margin-top: 4rem;
     border-radius: 1rem;
 }
-article img{
+article section img{
     width: 100%;
 }
 
-article p a{
+article section p a{
     background-color: #bdc3c7;
     padding: 0.5rem 3rem;
     color: #000;
@@ -140,12 +139,12 @@ article p a{
     text-align: center;
     transition: all 500ms ease-in-out;  
 }
-article p a:hover{
+article section p a:hover{
     color: #fff;
     background-color: #2f312ee3;
     transition: all 500ms ease-in-out;
 }
-main article ul li{
+main article section ul li{
     padding: 1rem;
 }
 
@@ -166,9 +165,11 @@ main div a img:hover{
     transform: translateY(-2rem) scale(1.1);
 }
 footer{
+    position: absolute;
+    width: 100%;
     background-color: #2f312e;
     padding: 1rem;
-    margin-top: 4rem; 
+    margin-top: 2rem;
 }
 footer h4{
     padding: 5rem;
@@ -182,10 +183,12 @@ footer p{
     text-align: center;
     font-size: 1.5rem;
 }
-footer h4, h5{
-    color: #fff;
+footer h4::before, footer h4::after{
+    content: url('../asset/mail.png');
+    margin: auto 2rem;
 }
 footer h4, h5{
+    color: #fff;
     text-align: center;
 }
 footer h3 a{
@@ -196,10 +199,24 @@ footer h3 a{
     font-size: 4rem;
 }
 .link{
-    width: 3.5rem;
-    /* transform: translateY(-4.5rem); */
+    width: 4rem;
     cursor: pointer;
-    /* float: right;*/
+}
+footer ul li{
+    display: block;
+    float: right;
+    margin-left: 3rem;
+    margin-right: -1rem;
+    transform: translateY(-5rem);
+    
+}
+footer .link{
+    margin: auto 3rem;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 70rem)and (min-width: 10rem){
@@ -280,6 +297,20 @@ footer h3 a{
     footer h6{
         text-align: center;
         font-size: 1.5rem;
+    }
+    footer ul li{
+        display: block;
+        float: center;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        transform: translateY(1rem);
+        margin: 2rem;
+    }
+    footer ul{
+        list-style: none;
+        margin: 0;
+        margin-right: 13rem;
+        padding: 0;
     }
 }
 @media screen and (orientation:landscape)  {
