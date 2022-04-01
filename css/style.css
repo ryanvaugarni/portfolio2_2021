@@ -45,9 +45,6 @@ a{
     outline: .1rem solid #333;
 }
 /* DEBUT DU SITE */
- 
-  
-
 /* TEXTE */
 main a{
     color: #000;
@@ -237,6 +234,7 @@ article:first-child{
 article h3{
     font-family: 'Inter', sans-serif;
     font-family: 'Ubuntu', sans-serif;
+    letter-spacing: .2rem;
     font-size: 3rem;
 }
 article h3:hover{
@@ -245,7 +243,7 @@ article h3:hover{
 }
 /* CONTENEUR */
 main article ul{
-    padding: 3rem;
+    padding: 2rem;
     background-color: #b8b8b8cc;
     max-width: 30%;
     border-radius: 1rem;
@@ -289,6 +287,8 @@ main article ul:hover{
 
 /* PIED DE PAGE */
 footer{
+    position: absolute;
+    width: 100%;
     background-color: #2f312e;
     padding: 1rem;
     margin-top: 4rem; 
@@ -320,7 +320,14 @@ footer h5, h6{
     cursor: pointer;
     /* float: right;*/
 }
-
+.ul_icone{
+    float: right;
+    right: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 20rem;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 70rem)and (min-width: 10rem){
     .show_menu{
@@ -333,7 +340,6 @@ footer h5, h6{
         right: 0;
         visibility: visible;
         background-color: #1e201f;
-    
     }
     .show_menu>ul>li{
         font-size: 2.5rem;
@@ -358,7 +364,6 @@ footer h5, h6{
         font-size: 1.7rem;
         margin-top: 1rem;
     }
-
     .gallery{
         grid-template-columns: repeat(2, 2fr);
     }
@@ -369,7 +374,6 @@ footer h5, h6{
         width: 100%;
         height: 100%;
     }
-
     main article ul{
         max-width: 35rem;
     }
@@ -426,8 +430,16 @@ footer h5, h6{
         text-align: center;
         font-size: 1.5rem;
     }
+    .ul_icone{
+        float: center;
+        right: 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 20rem;
+    }
 }
-@media screen and (orientation:landscape)  {
+@media screen and (orientation:landscape) and (max-width: 63rem) {
     header{
         height: 100vh;
     }
@@ -439,3 +451,15 @@ footer h5, h6{
         margin: 0.5rem;
     } */
 }
+/* .ul_icone{
+    float: right;
+    right: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 20rem;
+}
+.ul_icone>li{
+ 
+    text-align: center;
+} */
