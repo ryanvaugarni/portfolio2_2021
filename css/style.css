@@ -197,6 +197,18 @@ article ul li a img{
     margin: 0 auto;
     display: block;
 }
+.formation ul li img{
+    max-width: 9rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    display: block;
+}
+.formation ul li:nth-child(2){
+    border-radius: 1rem;
+    margin: 0 auto;
+    height: 14rem;
+    display: block;
+}
 
 /* ARTICLES ET SECTIONS */
 section, article{
@@ -243,8 +255,9 @@ article h3:hover{
 /* CONTENEUR */
 main article ul{
     padding: 2rem;
-    background-color: #b8b8b8cc;
+    background-color: #c9c9c9cc;
     max-width: 30%;
+    height: 32rem;
     border-radius: 1rem;
     display: inline-block;
     width: 100%;
@@ -357,7 +370,7 @@ footer ul{
     }
     header{
         padding: 1rem;
-        height: 36vh;
+        height: 40vh;
         background: #30312E;
     }
     header h1{
@@ -381,8 +394,8 @@ footer ul{
     main article ul{
         max-width: 35rem;
     }
-    h3{
-        font-size: small;
+    footer h3{
+        font-size: 2rem;
     }
     h3:hover{
         letter-spacing: 0.5rem;  
@@ -422,10 +435,13 @@ footer ul{
         padding: 1rem;
         margin-top: 4rem; 
     }
+    footer h4::before, footer h4::after{
+        margin: auto 0.7rem;
+    }
     footer p{
         color: #fff;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     footer h5, h6{
         color: #fff;
@@ -436,7 +452,6 @@ footer ul{
     }
     footer ul li{
         display: block;
-        float: center;
         margin-left: 3rem;
         margin-right: 2rem;
         transform: translateY(1rem);
@@ -453,13 +468,6 @@ footer ul{
     header{
         height: 100vh;
     }
-    /*
-    main article ul{
-        max-width: 40rem;
-        margin: 0 auto;
-        margin-top: 0rem;
-        margin: 0.5rem;
-    } */
 }
 footer ul li{
     display: inline-block;
