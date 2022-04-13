@@ -346,7 +346,7 @@ footer ul{
     padding: 0;
 }
 /* RESPONSIVE */
-@media screen and (max-width: 70rem)and (min-width: 10rem){
+@media screen and (max-width: 70rem) and (min-width: 10rem){
     .show_menu{
         position: fixed;
         height: 100vh;

@@ -221,7 +221,7 @@ footer ul{
 @media screen and (max-width: 70rem)and (min-width: 10rem){
     header{
         padding: 1rem;
-        height: 36vh;
+        height: 40vh;
         background: #30312E;
     }
     header h1{
@@ -302,6 +302,9 @@ footer ul{
         margin: 1rem auto;
         margin-right: 2rem;
         
+    }
+    footer h4::before, footer h4::after{
+        margin: auto 0.7rem;
     }
     footer ul{
         list-style: none;
