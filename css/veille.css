@@ -98,35 +98,7 @@ header h1:hover{
     text-shadow: 0.3rem 0.3rem 0 #464444;
     letter-spacing: .9rem;
 }
-/* FLECHE VERS LE BAS */
-.hide_menu{
-    position: fixed;
-    height: 100vh;
-    z-index: 2;
-    width: 30rem;
-    top: 0;
-    transition: all .3s;
-    right: -200rem;
-    visibility: hidden;
-}
-.show_menu>ul>li,.hide_menu>ul>li{
-    padding: 0.5rem;
-    font-size: 2rem;
-    margin-top: 4rem;
-}
-.show_menu{
-    position: absolute;
-    height: 100vh;
-    z-index: 2;
-    width: 30rem;
-    top: 0;
-    transition: all .3s;
-    right: 0;
-    visibility: visible;
-    background-color: #1e201fb9;
-
-}
-.bas{
+.return{
     max-width: 4.5%;
     display: block;
     margin: auto;
@@ -137,87 +109,22 @@ header h1:hover{
     transition: 500ms ease-in-out;
     background-color: #fff;
 }
-.bas:hover{
+.return:hover{
     transform: translateY(-2rem) scale(1.1);
-}
-/* MENU DEB*/
-nav ul{
-    max-width: 80rem;
-    margin: 0 auto 2rem;
-}
-nav ul li{
-    display: block;
-    line-height: 6rem;
-    text-align: center;
-    margin-top: 4rem;
-    width: 100%;
-}
-nav ul li a{
-    display: block;
-    margin: 0 auto;
-    transition: all 100ms ease-in-out;
-    text-transform: uppercase;
-}
-nav ul li:hover a{
-    margin: 0 auto;
-    display: block;
-    width: 13rem;
-    border-bottom: solid;
-}
-/* OUVERTURE MENU */
-.menushown{
-    height: 100vh;
-    width: 25rem;
-    background-color: #1e201fb9;
-    position: absolute;
-    top: 0;
-    right: -20rem;
-    transition: all .3s;
-    z-index: 10;
-    visibility: hidden;
-}
-/* FERMETURE MENU */
-.menuhidden{
-    transition: all ease-in-out .3s;
-    height: 100vh;
-    width: 25rem;
-    background-color: #1e201f3a;
-    position: absolute;
-    top: 0;
-    right: 20rem;
-    z-index: 2;
-    transition: all .3s;
-}
-/* MENU FIN */
-
-/* LOGO EXPERIENCES, FORMATIONS ET LOISIRS */
-article ul li a img{
-    max-width: 21%;
-    border-radius: 1rem;
-    margin: 0 auto;
-    display: block;
-}
-.formation ul li img{
-    max-width: 9rem;
-    border-radius: 1rem;
-    margin: 0 auto;
-    display: block;
-}
-.formation ul li:nth-child(2){
-    border-radius: 1rem;
-    margin: 0 auto;
-    height: 14rem;
-    display: block;
 }
 
 /* ARTICLES ET SECTIONS */
-section, article{
-    max-width: 130rem;
+main section p{
+    line-height: 3rem;
+    text-align: justify;
+}
+section{
+    max-width: 110rem;
     min-height: 5rem;
     padding: 0;
     margin: 0 auto 3rem;
     background-color: #F1F1F1;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 1rem;
 }
 section h3{
@@ -233,43 +140,17 @@ section h3:hover{
     letter-spacing: 0.5rem;
     transition: all 1.5s ease-in-out;
 }
-section ul{
-    padding: 3rem;
-}
-section ul li img{
-    max-width: 9rem;
-}
-article:first-child{
-    margin-top: 4rem;
-}
-article h3{
+main h3{
     font-family: 'Inter', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     font-size: 3rem;
-}
-article h3:hover{
-    letter-spacing: 0.5rem;
     transition: all 1.5s ease-in-out;   
 }
-/* CONTENEUR */
-main article ul{
-    padding: 2rem;
-    background-color: #c9c9c9cc;
-    max-width: 30%;
-    height: 32rem;
-    border-radius: 1rem;
-    display: inline-block;
-    width: 100%;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin: 2rem;  
-    transition: all 0.5s ease-in-out;
+h3:hover{
+    letter-spacing: 0.3rem;
+    
 }
-main article ul:hover{
-    transform:scale(1.1);  
-}
-
  /* LOGO COMPETENCES */
 .gallery{
     display: grid;
