@@ -54,6 +54,14 @@ main a{
     margin-left: 7rem;
     top: 5rem;
 }
+
+main section p a{
+    font-weight: 200;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    top: 0;
+}
 h2, h3, ul{
     text-align: center;
     padding: 1rem;
@@ -117,6 +125,9 @@ header h1:hover{
 main section p{
     line-height: 3rem;
     text-align: justify;
+}
+section p a{
+    font-size: 2rem;
 }
 section{
     max-width: 110rem;
