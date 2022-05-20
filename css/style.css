@@ -126,6 +126,24 @@ header h1:hover{
     background-color: #1e201fb9;
 
 }
+.cv{
+    display: block;
+    margin: 0 auto;
+    max-width: 12rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    background-color: #fff;
+    color: #000;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.cv:hover{
+    background-color: #ecebeb;
+  
+}
 .bas{
     max-width: 4.5%;
     display: block;
