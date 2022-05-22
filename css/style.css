@@ -130,8 +130,6 @@ header h1:hover{
     display: block;
     margin: 0 auto;
     max-width: 12rem;
-    /* padding-top: 1rem;
-    padding-bottom: 1rem; */
     background-color: #fff;
     color: #000;
     border-radius: 1rem;
@@ -388,7 +386,7 @@ footer ul{
     }
     header{
         padding: 1rem;
-        height: 40vh;
+        height: 45vh;
         background: #30312E;
     }
     header h1{
