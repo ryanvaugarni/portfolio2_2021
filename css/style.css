@@ -319,7 +319,6 @@ footer{
 }
 footer h4::before, footer h4::after{
     content: url('../asset/mail.png');
-    margin: auto 2rem;
 }
 footer h4{
     display: block;
