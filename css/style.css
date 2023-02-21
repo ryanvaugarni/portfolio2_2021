@@ -1,81 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&family=Inter:wght@300&family=Russo+One&family=Ubuntu&display=swap');
-
 /* reset css */
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  background-color: #fff;
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+background-color: #fff;
 }
-
-body {
-  font: 1.6rem 'Encode Sans Expanded', sans-serif;
-  margin: 0;
-  width: 100%;
+body{
+    font: 1.6rem 'Encode Sans Expanded', sans-serif;
+    margin: 0;
+    width: 100%;
 }
-
-h1, h2, h3, h4, h5, h6, p, figure, ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-
-a {
-  color: rgb(242, 236, 236);
-  text-decoration: none;
+a{
+    color: rgb(242, 236, 236);
+    text-decoration: none;
 }
-
-:root {
-  --color-default: #1e201f;
-  --color-primary: #2b7dc0;
-  --color-warning: #e23131;
-  --color-success: #4db32e;
-  --color-border: #b3b5b6;
+*{
+    box-sizing: border-box;
 }
-
+:root{
+    --color-default: #1e201f;
+    --color-primary: #2b7dc0;
+    --color-warning: #e23131;
+    --color-success: #4db32e;
+    --color-border: #b3b5b6;
+}
 /* scroll bars */
-::-webkit-scrollbar {
-  width: .2rem;
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #222 #333;
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: #222;
-  outline: .1rem solid #333;
+*::-webkit-scrollbar {
+    width: .2rem;
 }
-
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
 /* DEBUT DU SITE */
-
 /* TEXTE */
-main a {
-  color: #000;
-  font-weight: 700;
-  padding-bottom: 2rem;
-  font-size: 2rem;
-  margin-left: 7rem;
-  top: 5rem;
+main a{
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    margin-left: 7rem;
+    top: 5rem;
 }
-
-h2, h3, ul {
-  text-align: center;
-  padding: 1rem;
+h2, h3, ul{
+    text-align: center;
+    padding: 1rem;
 }
-
-p {
-  padding: 2rem;
-  padding-left: 2rem;
+p{
+    padding: 2rem;
+    padding-left: 2rem;
 }
 
 /* BACKGROUND DU HEADER */
-header img {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  width: 3rem;
-  cursor: pointer;
-  z-index: 5;
+header img{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+    cursor: pointer;
+    z-index: 5;
 }
-
 /* EN TETE */
-header {
+header{
     line-height: 5.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
