@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded",()=>{
-    console.log("Vous êtes connecté")
-    let date, foot
-    date = new Date();
-    foot = document.querySelector("footer p");
-    foot.innerText += `${date.getFullYear()} - Ryan Vaugarni | Tous droits réservés`
-})
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Vous êtes connecté");
+    
+    const foot = document.querySelector("footer p");
+    const year = new Date().getFullYear();
+    foot.innerText += ` - ${year} Ryan Vaugarni | Tous droits réservés`;
+  });
